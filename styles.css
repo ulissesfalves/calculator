@@ -1,0 +1,101 @@
+
+* {
+    background-color: azure;
+    font-family: "Orbitron", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+}
+
+body, html {
+    display: flex;
+    align-items: center;
+    flex-direction: column; 
+}
+
+
+.calculator {
+    width: 400px; /* Adjust width as needed */
+    height: 500px;
+    background-color: #2F2F2F; /* Light gray background */
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Soft shadow effect */
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.displayContainer {
+    width: 95%;
+    height: 80px;
+    background: #B2B9B7;
+    border: 4px solid black;
+    border-radius: 1px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; /* Align text to the right */
+    padding: 0 20px; /* Add some padding for text */
+    font-size: 24px; /* Adjust font size */
+    color: #fff; /* Text color */
+    margin-bottom: 10px; /* Add some space between display and keyboard */
+}
+
+.display {
+    font-size: 60px;
+    color: #000;
+    background-color: #B2B9B7;
+}
+
+/* Styles for keyboard container */
+.keyboardContainer {
+    width: 100%; /* Make the keyboard container full-width */
+    display: flex;
+    flex-wrap: wrap; /* Allow keyboard keys to wrap to the next line if needed */
+    justify-content: flex-start; /* Distribute keys evenly */    
+    padding: 10px;
+    background: #B2B9B7;
+    border: 4px solid #2F2F2F; /* Match display background color */
+    border-radius: 5px;
+}
+
+/* Common styles for all keys */
+.keys {
+    width: calc(25% - 10px); /* Adjust width of keys */
+    height: 60px; /* Adjust height of keys */
+    margin: 5px; /* Adjust margin between keys */
+    background-color: #E0E0E0; /* Background color of keys */
+    border-radius: 5px; /* Rounded corners for keys */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px; /* Font size of text on keys */
+    color: #000; /* Text color on keys */
+    cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+/* Styles for top symbol keys (AC, ±, %) */
+.topSymbols {
+    background-color: #F0F0F0; /* Background color of top symbol keys */
+}
+
+/* Styles for right symbol keys (/, *, -, +, =) */
+.rightSymbols {
+    background-color: #FFB74D; /* Background color of right symbol keys */
+}
+
+/* Styles for number keys */
+.numbers {
+    background-color: #4CAF50; /* Background color of number keys */
+    color: #FFF; /* Text color on number keys */
+}
+
+.keys#zero {
+    flex-grow: 2;
+}
+
+.keys#point,    
+.keys#equals {
+    width: calc(25% - 10px); /* Adjust width of keys */
+}
